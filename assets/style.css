@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Raleway";
+}
+:root {
+  --primary-background: #202020;
+  --secondary-background: #303030;
+  --primary-color: #d2d2d2;
+  --yellow: yellow;
+  --half-opacity: 0.7;
+}
+body {
+  background: var(--primary-background);
+  color: var(--primary-color);
+}
+header {
+  background-color: var(--secondary-background);
+  padding: 1em 0;
+}
+nav {
+  width: 950px;
+  margin: 0 auto;
+
+  a {
+    color: var(--yellow);
+    opacity: var(--half-opacity);
+  }
+}
+.container {
+  width: 950px;
+  margin: 0 auto;
+}
+.chat-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--secondary-background);
+  padding: 1em 0;
+
+  & #chat-form {
+    width: 950px;
+    margin: 0 auto;
+
+    & .form-content {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+
+      & textarea {
+        width: 100%;
+        background-color: inherit;
+        color: var(--primary-color);
+        outline: none;
+        border: 1px solid var(--yellow);
+        padding: 12px;
+        border-radius: 5px;
+        max-height: 45px;
+        resize: none;
+      }
+
+      & #send-chat-button {
+        background-color: inherit;
+        color: white;
+        outline: none;
+        border: 1px solid var(--yellow);
+        padding: 10px;
+        font-size: 1.2rem;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+/* Chat display section */
+.chat-display-section {
+  margin: 2em auto 3em;
+
+  & #chat-message-list {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 1em;
+
+    & .chat-response {
+      display: flex;
+      gap: 1em;
+      background-color: var(--secondary-background);
+      padding: 1em;
+      border-radius: 5px;
+
+      &:nth-child(even) {
+        background-color: var(--primary-background);
+      }
+
+      & i {
+        font-size: 2rem;
+      }
+    }
+  }
+}
