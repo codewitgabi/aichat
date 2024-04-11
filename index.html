@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -22,7 +22,7 @@
     <!-- Chat display section -->
     <section class="container chat-display-section">
       <div id="chat-message-list">
-        <div class="chat-response">
+        <!--<div class="chat-response">
           <i class="bi bi-person-circle"></i>
           <div class="chat-message">
             I want to get the name of every rich man on earth.
@@ -39,7 +39,7 @@
           <div class="chat-message">
             I want to get the name of every rich man on earth.
           </div>
-        </div>
+        </div>-->
       </div>
     </section>
     <!-- End Chat display section -->
@@ -57,4 +57,14 @@
     </div>
     <!-- End Chat box section -->
   </body>
+  <script type="importmap">
+    {
+      "imports": {
+        "@google/generative-ai": "https://esm.run/@google/generative-ai"
+      }
+    }
+  </script>
+  <script type="module" src="./assets/Key.js"></script>
+  <script type="module" src="./assets/main.js"></script>
+  <script type="module" src="./assets/gemini.js"></script>
 </html>
