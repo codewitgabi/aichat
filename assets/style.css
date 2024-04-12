@@ -26,6 +26,11 @@ nav {
   width: 950px;
   margin: 0 auto;
 
+  @media (max-width: 955px) {
+    width: initial;
+    margin: 0 1.5em;
+  }
+
   a {
     color: var(--yellow);
     opacity: var(--half-opacity);
@@ -34,6 +39,11 @@ nav {
 .container {
   width: 950px;
   margin: 0 auto;
+
+  @media (max-width: 955px) {
+    width: initial;
+    margin: 0 1.5em;
+  }
 }
 .chat-container {
   position: fixed;
@@ -46,6 +56,11 @@ nav {
   & #chat-form {
     width: 950px;
     margin: 0 auto;
+
+    @media (max-width: 955px) {
+      width: initial;
+      margin: 0 1.5em;
+    }
 
     & .form-content {
       display: flex;
@@ -81,6 +96,10 @@ nav {
 .chat-display-section {
   margin: 2em auto 3em;
 
+  @media (max-width: 955px) {
+    margin: 2em 1.5em 3em;
+  }
+
   & #chat-message-list {
     display: grid;
     grid-template-columns: repeat(1fr);
@@ -92,6 +111,7 @@ nav {
       background-color: var(--secondary-background);
       padding: 1em;
       border-radius: 5px;
+      width: 100%;
 
       &:nth-child(even) {
         background-color: var(--primary-background);
@@ -102,4 +122,11 @@ nav {
       }
     }
   }
+}
+
+pre {
+  overflow: auto;
+}
+code {
+  overflow: auto;
 }
