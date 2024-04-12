@@ -7,6 +7,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css"
+    />
     <link rel="stylesheet" href="./assets/style.css" />
     <title>AI Chat</title>
   </head>
@@ -22,10 +26,14 @@
     <!-- Chat display section -->
     <section class="container chat-display-section">
       <div id="chat-message-list">
-        <!--<div class="chat-response">
+        <!-- <div class="chat-response">
           <i class="bi bi-person-circle"></i>
           <div class="chat-message">
-            I want to get the name of every rich man on earth.
+            <pre>
+             <code>
+              a function to say hello 
+             </code>
+             </pre>
           </div>
         </div>-->
 
@@ -47,6 +55,10 @@
     </div>
     <!-- End Chat box section -->
   </body>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll();
+  </script>
   <script type="importmap">
     {
       "imports": {

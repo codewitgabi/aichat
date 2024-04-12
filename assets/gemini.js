@@ -1,3 +1,4 @@
+hljs.highlightAll();
 //  response logic
 import {
  KEY
@@ -27,6 +28,6 @@ export async function airesponse() {
 
  let newDiv = document.createElement("div");
  newDiv.setAttribute("class", "chat-response");
- newDiv.innerHTML = '<i class="bi bi-diagram-2"></i><div class="chat-message">' + '<pre><code>' + text + '</code></pre>' + '</div>';
+ newDiv.innerHTML = `<i class="bi bi-diagram-2"></i><div class="chat-message"><pre><code>${text}</code></pre></div>`;
  messageDiv.appendChild(newDiv);
 }
