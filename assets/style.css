@@ -94,10 +94,10 @@ nav {
 
 /* Chat display section */
 .chat-display-section {
-  margin: 2em auto 3em;
+  margin: 2em auto 5em;
 
   @media (max-width: 955px) {
-    margin: 2em 1.5em 3em;
+    margin: 2em 1.5em 6em;
   }
 
   & #chat-message-list {
@@ -112,9 +112,14 @@ nav {
       padding: 1em;
       border-radius: 5px;
       width: 100%;
+      overflow: auto;
 
       &:nth-child(even) {
         background-color: var(--primary-background);
+      }
+
+      & #send-chat-button {
+        cursor: hand;
       }
 
       & i {
@@ -122,11 +127,4 @@ nav {
       }
     }
   }
-}
-
-pre {
-  overflow: auto;
-}
-code {
-  overflow: auto;
 }
